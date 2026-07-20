@@ -23,4 +23,3 @@ clean: # Remove all temporary files / folders and the virtual environment
 	find . -type d -name ".pytest_cache" -exec rm -rf {} +
 	rm -rf .venv
 	rm -rf build
-	rm -rf quoi.egg-info
