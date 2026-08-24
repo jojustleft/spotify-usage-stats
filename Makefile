@@ -3,9 +3,17 @@ venv: # Create virtual environment and install all requirements
 	uv venv --clear
 	uv sync
 
+.PHONY: get_tags
+get_tags: # Request music tag information from Last.fm
+	python3 fetch_music_tags.py
+
 .PHONY: jupyter
 jupyter:
 	uv run jupyter lab
+
+.PHONY: dash
+dash:
+	uv run dashboard.py
 
 .PHONY: ruff
 ruff:
