@@ -1,0 +1,50 @@
+h4, h5, a, p, span {
+    font-family: Helvetica;
+}
+
+h1, h2, h3 {
+    font-family: Georgia;
+    font-weight: bold;
+    color: #201B23;
+}
+
+a {
+    color: #4a6649;
+    text-decoration: underline;
+
+    &:hover {
+        color: #201B23;
+    }
+    &:focus {
+        color: #201B23;
+    }
+}
+
+body {
+    background-color: #f7ece9;
+    padding: 0px 50px;
+}
+
+.descr {
+    color: #4a464d;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.error {
+    color: #D5834F;
+    margin-top: 1em;
+}
+
+.card {
+    background-color: #FCF6F5;
+    border-radius: 0%;
+}
+
+.modebar {
+    display: none !important;
+}
+
+::selection {
+    background-color: #759d74;
+}
